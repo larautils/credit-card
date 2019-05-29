@@ -43,7 +43,7 @@ class Factory
      * @return \LVR\CreditCard\Cards\Card
      * @throws \LVR\CreditCard\Exceptions\CreditCardException
      */
-    public static function makeFromNumber(string $card_number)
+    public static function makeFromNumber($card_number)
     {
         return self::determineCardByNumber($card_number);
     }
@@ -54,7 +54,7 @@ class Factory
      * @return mixed
      * @throws \LVR\CreditCard\Exceptions\CreditCardException
      */
-    protected static function determineCardByNumber(string $card_number)
+    protected static function determineCardByNumber($card_number)
     {
         foreach (self::$available_cards as $card) {
             if (preg_match($card::$pattern, $card_number)) {
