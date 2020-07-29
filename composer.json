@@ -13,7 +13,7 @@
     ],
 
     "require": {
-        "php": "^5.0",
+        "php": "^5.0|^7.0",
         "illuminate/validation" : "^5.4",
         "illuminate/translation": "^5.4"
     },
