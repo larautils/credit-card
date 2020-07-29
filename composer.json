@@ -13,13 +13,12 @@
     ],
 
     "require": {
-        "php": ">=5.0.0",
+        "php": "5.*|7.*",
         "illuminate/validation" : "^5.4",
         "illuminate/translation": "^5.4"
     },
 
     "require-dev": {
-        "php": ">=5.0.0",
         "friendsofphp/php-cs-fixer": "~2.5",
         "phpunit/phpunit": "6.2.*",
         "orchestra/testbench": "^3.5"
